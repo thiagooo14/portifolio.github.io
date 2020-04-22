@@ -1,23 +1,33 @@
 .eutinic {
-	width: 200px;
 	float: left;
 	margin: 0 20px 20px 0;
+	width: 200px;
 }
 
 .eu {
-	width: 200px;
 	float: right;
 	margin: 0 20px 20px 0;
+	width: 200px;
 }
 
 .principal {
-	padding: 3em 0;
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	margin: 0 auto;
 	background: #fefefe;
+	padding: 1em 0;
 }
+
+.principal a {
+	color: rgb(0, 0, 0);
+	font-weight: 200;
+    padding-left: 10px;
+	text-shadow: #1b1b1b 2.5px 2px 2px;
+}
+
+.principal article {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
 .segundo-principal {
 	background: linear-gradient(#fefefe, #888888);
 }
@@ -27,11 +37,17 @@
 	padding: 3em 0;
 }
 
+.terceiro-principal article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .lista {
-	width: 50%;
 	display: inline-block;
-    vertical-align: top;
-    text-align: justify;
+	width: 50%;
+	text-align: justify;
+	vertical-align: top;
 }
 .sub-lista {
 	padding-left: 40px;
@@ -39,8 +55,8 @@
 }
 
 .redes {
-	height: 200px;
 	border-radius: 50%;
+	height: 200px;
 	padding: 0 50px;
 }
 
