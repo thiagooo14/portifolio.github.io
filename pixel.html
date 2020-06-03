@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Art</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pixel.css" />
+    <link
+			href="https://fonts.googleapis.com/css?family=VT323|Raleway&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+  </head>
+  <body>
+
+    <header class="cabecalho font">
+			<h1 class="titulo-principal">PixelArt</h1>
+		</header>
+
+    <main>
+
+      <h1 id="title" class="title">Paleta de Cores</h1>
+      
+      <table id="color-palette" class="color-palette">
+        <tbody>
+          <tr>
+            <td class="color cor1" id="black" onclick="mudaSelected(0)">
+              &#10004;
+            </td>
+            <td class="color cor2" id="green" onclick="mudaSelected(1)">
+              &#10004;
+            </td>
+            <td class="color cor3" id="yellow" onclick="mudaSelected(2)">
+              &#10004;
+            </td>
+            <td class="color cor4" id="blue" onclick="mudaSelected(3)">
+              &#10004;
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <br />
+      
+      <table id="pixel-board">
+        <tbody>
+          <tr>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+          </tr>
+          
+          <button id="clear-board">limpar tela</button>
+          <br />
+          <!-- <p>escolha o tamanho da tela</p>
+          <input type="text" />
+          <button>vai</button> -->
+          
+          <tr>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+          </tr>
+          
+          <tr>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+          </tr>
+          
+          <tr>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+          </tr>
+          
+          <tr>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+            <td class="pixel"></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+			<p class="copy">&copy; desenvolvido por Thiago Tavares</p>
+		</footer>
+      
+      <script src="src/pixel.js"></script>
+    </body>
+    </html>
+    
