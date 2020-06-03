@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Meme Generetor</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/meme.css" />
+
+		<link
+			href="https://fonts.googleapis.com/css?family=VT323|Raleway&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<header class="cabecalho font">
+			<h1 class="titulo-principal">Meme</h1>
+		</header>
+
+		<main>
+			<div class="memes">
+				<p>Escolha uma Imagem pŕe definida abaixo</p>
+				<img
+					id="meme-1"
+					class="meme"
+					src="images/meme1.jpeg"
+					onclick="mostraMeme1()"
+				/>
+				<img
+					id="meme-2"
+					class="meme"
+					src="images/meme2.jpeg"
+					onclick="mostraMeme2()"
+				/>
+				<img
+					id="meme-3"
+					class="meme"
+					src="images/meme3.jpeg"
+					onclick="mostraMeme3()"
+				/>
+				<img
+					id="meme-4"
+					class="meme"
+					src="images/meme4.jpeg"
+					onclick="mostraMeme4()"
+				/>
+			</div>
+
+			<br />
+
+			<div class="procura-img">
+				<p>Ou Escolha uma imagem do seu computador</p>
+				<input
+					type="file"
+					name="img"
+					id="meme-insert"
+					accept="image/png, image.jpeg"
+					onchange="loadImage(event)"
+				/>
+
+				<br />
+				<br />
+
+				<div class="text-box">
+					<p>Insira texto do meme abaixo:</p>
+					<input type="text" name="text" id="text-input" maxlength="60" />
+				</div>
+
+				<br />
+
+				<p>Escolha a Borda</p>
+				<button id="button1" class="button1">borda 1</button>
+				<button id="button2" class="button2">borda 2</button>
+				<button id="button3" class="button3">borda 3</button>
+			</div>
+
+			<br />
+
+			<div id="meme-image-container" class="caixa-img">
+				<p id="meme-text" class="meme-text"></p>
+				<img id="meme-image" class="meme-image" alt="imagem-meme" />
+			</div>
+
+			<br />
+		</main>
+
+		<script src="src/meme.js"></script>
+	</body>
+</html>
